@@ -1,6 +1,6 @@
 const _css = require("../css/app.scss");
 import "phoenix_html"
-import Greeter from "./hello";
+import Greeter from "./greeter";
 import "./hangman_app"
 import React from "react";
 import ReactDOM from "react-dom"

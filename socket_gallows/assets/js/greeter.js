@@ -16,7 +16,7 @@ function Greeter(props){
     }, [])
 
     const decideWhatToDo = (respData) => {
-        
+
     }
 
     const clickHandler = async () => {

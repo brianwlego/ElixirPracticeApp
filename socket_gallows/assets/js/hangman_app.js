@@ -1,6 +1,10 @@
-import HangmanSocket from "./hangman_socket.js"
+// import HangmanSocket from "./hangman_socket.js"
 
-window.onload = function () {
-    let hangman = new HangmanSocket() 
-    hangman.connect_to_hangman()
-}
+// let game;
+
+// window.onload = function () {
+//     game = new HangmanSocket() 
+//     hangman.connect_to_hangman()
+// }
+
+// module.exports = game;

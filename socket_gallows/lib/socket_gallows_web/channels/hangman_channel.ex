@@ -9,7 +9,13 @@ defmodule SocketGallowsWeb.HangmanChannel do
     { :ok, socket }
   end
 
-
+  def handle_in("make_move", params, socket ) do
+    # IO.inspect(params)
+    game = socket.assigns.game
+    new_state = Hangman.make_move(game, params)
+    push(socket, "tally", new_state)
+    { :noreply, socket }
+  end
 
 
   def handle_in("tally", _, socket ) do

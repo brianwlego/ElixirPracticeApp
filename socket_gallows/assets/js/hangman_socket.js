@@ -15,17 +15,16 @@ export default class HangmanSocket {
                 this.fetch_tally()
             })
             .receive("error", resp => {
-                alert(resp)
                 throw(resp)
             })
     }
 
-    connect_to_hangman() {
-        this.setup_channel()
-        this.channel.on("tally", tally => {
-            console.dir(tally)
-        })
-    }
+    // connect_to_hangman() {
+    //     this.setup_channel()
+    //     return this.channel.on("tally", tally => {
+    //         console.dir(tally)
+    //     })
+    // }
 
 
     fetch_tally() {
